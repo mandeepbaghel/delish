@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <title>delish - Search over million recipes.</title>
+    <title>delish - search over million recipes.</title>
 </head>
 
 <body>
@@ -56,13 +56,19 @@
             <div class="heading">
                 Search Results
                </div>
-            <ul class="results__list">
-                <div class="initial__content">
+               <div class="search__initial__wrap">
+                <div class="initial__content search__initial">
                     <img src="./img/search.svg" alt="search-img" class="card-img">
                     <p>
                         You have not searched for any recipes yet.
                     </p>
                 </div>
+               </div>
+               <button class="clear__btn clear-search__btn">
+                <img src="./img/icons/delete-bin.svg" alt="" style="width: 12px; margin-right: 8px;">
+                clear all
+            </button>
+            <ul class="results__list">
                 <!--
                 <li>
                     <a class="results__link results__link--active" href="#23456">
@@ -91,7 +97,6 @@
             </ul>
 
             <div class="results__pages">
-                
                 <!--
                 <button class="btn-inline results__btn--prev">
                     <svg class="search__icon">
@@ -109,14 +114,12 @@
             </div>
         </div>
 
-
-
         <div class="recipe-box">
             <div class="heading">
-                Welcome to <img src="./img/logo.png" alt="" class="welcome-logo">
+                Welcome to <br> <img src="./img/logo.png" alt="" class="welcome-logo" >
             </div>
-            <div class="recipe">
-            <div class="initial__content brown__bg">
+            <div class="recipe__initial__wrap">
+            <div class="initial__content brown__bg recipe__initial">
                 <div class="hero__text">
                     <img src="./img/recipe.svg" alt="search-img" class="card-img">
                     <h1>
@@ -131,6 +134,12 @@
                    </strong>
                 </p>
             </div>
+            </div>
+            <button class="clear__btn clear-recipe__btn">
+                <img src="./img/icons/delete-bin.svg" alt="" style="width: 12px; margin-right: 8px;">
+                    clear recipe
+            </button>
+            <div class="recipe">
          <!--
             <figure class="recipe__fig">
                 <img src="img/test-1.jpg" alt="Tomato" class="recipe__img">
@@ -279,14 +288,20 @@
         </div>
 
         <div class="shopping">
-            <h2 class="heading">My Shopping List</h2>
+        <div class="heading">My Shopping List</div>
+            <div class="list__initial__wrap">
+            <div class="initial__content list__initial">
+                <img src="./img/shopping-cart.svg" alt="shopping-cart-img" class="card-img">
+                <p>
+                    You don't have any items in your shopping list yet.
+                </p>
+            </div>
+            </div>
+            <button class="clear__btn clear-list__btn">
+                <img src="./img/icons/delete-bin.svg" alt="" style="width: 12px; margin-right: 8px;">
+                clear all
+            </button>
             <ul class="shopping__list">
-                <div class="initial__content">
-                    <img src="./img/shopping-cart.svg" alt="shopping-cart-img" class="card-img">
-                    <p>
-                        You don't have any items in your shopping list yet.
-                    </p>
-                </div>
                 <!--
                 <li class="shopping__item">
                     <div class="shopping__count">
@@ -369,13 +384,12 @@
                 -->
             </ul>
 
-            <div class="copyright">
-                Made by <a href="https://github.com/mandeepbaghel" target="_blank">mandeepbaghel</a>. <br> 
-                Inspired by <a href="http://jonas.io/" target="_blank">Jonas.io's</a> forkify app.<br>
-                Powered by <a href="https://spoonacular.com/food-api/" target="_blank" class="link">Spoonacular Food API</a>.
-            </div>
-
         </div>
+    </div>
+    <div class="copyright">
+        Made by <a href="https://github.com/mandeepbaghel" target="_blank">mandeepbaghel</a>. <br> 
+        Inspired by <a href="http://jonas.io/" target="_blank">Jonas.io's</a> forkify app.<br>
+        Powered by <a href="https://spoonacular.com/food-api/" target="_blank" class="link">Spoonacular Food API</a>.
     </div>
     <div class="overlay"></div>
     <div class="modal">
