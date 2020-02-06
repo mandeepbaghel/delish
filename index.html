@@ -25,7 +25,7 @@
         <div class="likes">
             <div class="likes__field">
                 <div class="likes__number">
-                    Liked Recipes (<span class="likes__count">0</span>)
+                   <span class="liked__text">Liked Recipes</span>  (<span class="likes__count">0</span>)
                 </div>
                 <svg class="likes__icon">
                     <use href="img/icons.svg#icon-heart"></use>
@@ -50,16 +50,33 @@
             </div>
         </div>
     </header>
+
     <div class="container">
         <div class="results">
-            <div class="heading">
+            <div class="heading welcome-logo-mobile">
+                Welcome to <br> <img src="./img/logo.png" alt="" class="welcome-logo" >
+            </div>
+            <div class="heading search-result-heading">
                 Search Results
-               </div>
-               <div class="search__initial__wrap">
+            </div>
+               <div class="search__initial__wrap search__initial--desktop">
                 <div class="initial__content search__initial">
-                    <img src="./img/search.svg" alt="search-img" class="card-img">
-                    <p>
+                    <img src="./img/search.svg" alt="search-img" class="card-img desktop-img">
+                    <p class="desktop-text">
                         You have not searched for any recipe. Type the recipe name in the search bar above to get started.
+                    </p>
+                    <div class="hero__text mobile__text">
+                        <img src="./img/recipe.svg" alt="search-img" class="card-img">
+                        <h1>
+                            More than <br> 1 Million Recipes
+                        </h1>
+                    </div>
+                    <p class="mobile__text">
+                       Get the recipes of your favourite food.
+                       <br>
+                       <strong>
+                           Get started by searching a recipe.
+                       </strong>
                     </p>
                 </div>
                </div>
@@ -114,7 +131,13 @@
         </div>
 
         <div class="recipe-box">
-            <div class="heading">
+            <button class="back-btn">
+                <img src="./img/icons/back.svg" alt="">
+               <span class="heading">
+                   Back
+               </span>
+            </button>
+            <div class="heading welcome-logo-desktop">
                 Welcome to <br> <img src="./img/logo.png" alt="" class="welcome-logo" >
             </div>
             <div class="recipe__initial__wrap">
