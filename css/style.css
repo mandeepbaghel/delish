@@ -463,7 +463,7 @@ button{
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s 0.2s;
-  height: 80vh;
+  max-height: 80vh;
   overflow-y: scroll;
 }
 
