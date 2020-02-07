@@ -376,7 +376,7 @@ button{
 }
 .search__mobile{
   display: none;
-  margin-top: 12vh;
+  margin-top: 75px;
 }
 
 .search:focus-within {
@@ -1038,8 +1038,7 @@ button{
     display: none;
   }
   .header{
-    height: 8vh;
-    min-height: 8vh;
+    height: 55px;
     padding: 1rem;
   }
   .header__logo{
@@ -1138,7 +1137,6 @@ button{
   .likes__panel {
     right: 0.5rem;
     top: 5rem;
-    height: 90vh;
   }
 }
 
