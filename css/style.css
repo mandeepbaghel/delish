@@ -31,6 +31,14 @@
     url("./ProductSans-Black.woff") format("woff");
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -426,16 +434,18 @@ button{
   background-color: #f2efee;
 }
 
-
-.likes__panel:hover,
-.likes__field:hover + .likes__panel {
-  visibility: visible;
-  opacity: 1;
+@media all and (min-width:768px){
+  .likes__panel:hover,
+  .likes__field:hover + .likes__panel {
+    visibility: visible;
+    opacity: 1;
+  } 
 }
 
 .likes__icon {
   fill: rgb(196, 19, 19);
  width: 24px;
+ min-width: 24px;
  margin-right: 4px;
  height: 100%;
 }
@@ -453,6 +463,11 @@ button{
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s 0.2s;
+}
+
+.makeVisible{
+  opacity: 1;
+  visibility: visible;
 }
 
 .close__list--btn{
@@ -816,7 +831,7 @@ button{
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 4px;
 }
 
 /* Track */
@@ -826,7 +841,7 @@ button{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(151, 151, 151);
+  background: rgb(141, 141, 141);
   border-radius: 6px;
 }
 
@@ -996,6 +1011,7 @@ button{
   }
   .header{
     height: 8vh;
+    min-height: 8vh;
     padding: 1rem;
   }
   .header__logo{
@@ -1062,6 +1078,10 @@ button{
     transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     transform: translateX(100vw);
   }
+  .shopping__list{
+    max-height: auto;
+    overflow-y: visible;
+  }
   .welcome-logo-mobile{
     display: block;
   }
@@ -1080,6 +1100,12 @@ button{
   }
   .recipe__instructions-btn{
     margin-right: 0;
+  }
+  .shopping__count p , .shopping__count input{
+    font-size: 1.6rem;
+  }
+  .shopping__description{
+    font-size: 1.8rem;
   }
 }
 
