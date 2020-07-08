@@ -1,6 +1,8 @@
 # delish
+
 recipe searching app 
-[see project at] : https://mandeepbaghel.github.io/delish/
+
+see project at -  (https://mandeepbaghel.github.io/delish/)
 
 ## Description:
 
