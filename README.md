@@ -10,7 +10,7 @@ A simple recipe searching app made using JavaScript in which you can get recipe 
 
 ### Features:
 
-1. Beautiful UI
+1. Material Design
 2. Responsive
 3. Toggle to Dark Mode!
 4. Data Persistance even after reload
